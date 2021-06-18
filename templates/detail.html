@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock title %}
+{% block content %}
+    <div class="top">
+        <div class="title">
+            <h1>{{ Blog.title }}</h1>
+        </div>
+    </div>
+    <div class="mid">
+        <div class="pic">
+            <img src="{{ Blog.post_image.url }}" class="img-fluid" alt="{{ Blog.title }}">
+        </div>
+    </div>
+    <div class="bot">
+        <div class="category">
+            <h5>Catigoriya: {{ Blog.categories }}</h5>
+        </div>
+        <div class="desc">
+            <p>{{ Blog.description }}</p>
+        </div>
+    </div>
+{%endblock%}
+
+  
+
+
